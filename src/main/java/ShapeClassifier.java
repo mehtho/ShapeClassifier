@@ -17,16 +17,14 @@ public class ShapeClassifier {
   	 * String arg is of following format: <ShapeGuess,SizeGuess,EvenOddGuess,Params>
 	 * Note: Params is a comma separated string containing the length of each side of the shape.
 	 *
-	 * Supported shapes: "Line", "Circle", "Ellipse", "Rectangle", "Square", "Equilateral", "Isosceles", "Scalene"
-	 * Supported size: "Small", "Large"
-	 *
-	 * For example, for an equilateral triangle, the Params could be = 100,100,100
-	 * 
-	 * The method returns "Yes" if all 3 guesses are correct. For any incorrect guesses, it returns a comma-separated string
-	 * indicating which guesses were incorrect.
-	 * -> If >=3 guesses are incorrect then the program prints an error message and exits
-	 * -> If the shape guess is incorrect, then the program returns a message with a suggestion for the shape guess
-	 * -> If the size or even/odd guesses are incorrect, then the program returns a message indicating the same
+	 * Rules for Size => 
+         * If the perimeter of the shape
+	 * -> exceeds 100, it is a "Large" shape
+	 * -> lesser than 10, it is a "Small" shape
+	 * Rules for Size => 
+         * If the perimeter of the shape
+	 * -> exceeds 100, it is a "Large" shape
+	 * -> lesser than 10, it is a "Small" shapeize or even/odd guesses are incorrect, then the program returns a message indicating the same
 	 *
 	 * Rules for Size => 
          * If the perimeter of the shape
